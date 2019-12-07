@@ -3,6 +3,8 @@
 const express = require ('express');  
 const app = express(); //creates a server object. 
 
+app.use(express.static('./public'));
+
 //to make the file run, i meed to tell it to listen. listen takes in port number
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function() {
