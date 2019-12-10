@@ -3,7 +3,8 @@
 const express = require ('express');  
 const app = express(); //creates a server object. 
 
-app.use(express.static('./public'));
+app.use(express.static('./public'));// unlocks the files
+// makes the client think these are the root files
 
 //to make the file run, i meed to tell it to listen. listen takes in port number
 const PORT = process.env.PORT || 3000;
